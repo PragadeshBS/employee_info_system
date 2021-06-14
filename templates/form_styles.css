@@ -1,0 +1,120 @@
+h1 {
+  padding: 20px 0 10px 7%;
+  color: darkslategray;
+}
+hr {
+  width: 90%;
+  margin: 0 auto;
+  color: lightslategray;
+}
+form {
+  width: 80%;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-row {
+  display: flex;
+  padding: 30px 10px;
+}
+label {
+  padding-right: 30px;
+  width: 200px;
+  text-align: left;
+}
+select,
+input[type="date"],
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 200px;
+  text-align: center;
+}
+input[type="date"] {
+  border: none;
+  cursor: pointer;
+}
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+button {
+  background-color: rgba(255, 160, 122, 1);
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2em;
+  color: #222;
+}
+button:hover {
+  background-color: rgba(255, 160, 122, 0.8);
+  cursor: pointer;
+}
+.small-snippet {
+  padding: 10px 100px;
+  font-size: 0.8em;
+  color: grey;
+}
+.small-snippet span a {
+  color: steelblue;
+}
+.errors {
+  padding: 10px;
+  color: lightsalmon;
+  text-align: center;
+}
+.info {
+  padding-top: 10px;
+  background-color: darkslateblue;
+  width: 80%;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 10px auto;
+  padding: 1rem 0;
+  border-radius: 12px;
+}
+.info a {
+  color: coral;
+  display: block;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+  label {
+    padding: 5px 0 20px;
+  }
+  .small-snippet {
+    padding: 5px;
+  }
+  /* reduced padding for submit button and form */
+  .form-row:nth-last-child(1) {
+    padding: 5px 0 15px;
+  }
+  form {
+    padding: 10px;
+  }
+}
+/* remove arrows from input number field */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

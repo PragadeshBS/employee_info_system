@@ -1,0 +1,101 @@
+h1{
+	padding: 20px 0 10px 7%;
+	color: darkslategray;
+}
+hr{
+	width: 90%;
+	margin: 0 auto;
+	color: lightslategray;
+}
+.info{
+	padding-top: 10px;
+	background-color: darkslateblue;
+	width: 80%;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	margin: 10px auto;
+	padding: 1rem 0;
+	border-radius: 12px;
+}
+.info a{
+	color:coral;
+	display: block;
+	padding: 10px;
+}
+table {
+	min-width: 90%;
+	border-collapse: collapse;
+	margin: 20px auto;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: coral;
+  color: white;
+}
+td a{
+	color: steelblue;
+}
+td{
+	padding: 20px;
+}
+td:nth-last-child(1){
+	padding: 0 2%;
+}
+td:nth-last-child(1) button{
+	background-color: crimson;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	border: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.info{
+	padding-top: 10px;
+	background-color: darkslateblue;
+	width: 80%;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	margin: 10px auto;
+	padding: 1rem 0;
+	border-radius: 12px;
+}
+.info a{
+	color:coral;
+	display: block;
+	padding: 10px;
+}
+.no-data{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px;
+	font-size: 1.5em;
+}
+.no-data a{
+	color: coral;
+	display: block;
+	padding: 30px;
+}
+.small-snippet{
+	display: block;
+	padding: 15px 0;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 0.8em;
+	color: grey;
+}
+.small-snippet span a{
+	color: steelblue;
+}
