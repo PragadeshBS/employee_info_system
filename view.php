@@ -158,12 +158,13 @@ if ($employees){
 	}
 
 	printButton.addEventListener('click', (e) => {
-		//print after page loads
+		// open new page with table and print after page loads
 		var newWindow = window.open('print_table.php');
 		setTimeout(() => {
 			newWindow.print();
+			// close page after print
 			newWindow.close();
-		}, 100)
+		}, 300)
 	});
 
 	//search
@@ -178,7 +179,7 @@ if ($employees){
 					visible = true;
 				}
 			})
-			//hide rows
+			// show/hide rows
 			if (!visible){
 				elem.style.position = 'absolute';
 				elem.style.top = '-99999px';
